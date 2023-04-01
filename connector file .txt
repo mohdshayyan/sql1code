@@ -112,4 +112,4 @@ def checkout():
      con.commit()
 if con.is_connected():
      showmenu()
-     print('connected')
+     print("connected")
