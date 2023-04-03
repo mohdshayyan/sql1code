@@ -1,8 +1,8 @@
 /*TO INSTALL mysql.connector*/
 https://youtu.be/jWcHIF4tnNI
-'''commands=>
-setup.py
-pip install mysql-connector'''
+commands=>
+1. setup.py
+2. pip install mysql-connector
 
 /*to fix error in pandas*/
 https://www.youtube.com/watch?v=WPNhrYmx_Jk
