@@ -1,16 +1,10 @@
-# to install with CMD =>
-
-pip install mysql-connector-python
-------------------------------------------------------------------
-# code=>
-
 import mysql.connector as mycon
 con = mycon.connect(host="localhost",user="root",password="root",database="hotel")
 
 def showmenu():
     while True:
         print("@" * 30)
-        print("----    HOTEL AWANA    ----")
+        print("----    HOTEL SHAYYAN    ----")
         print("@" * 30)
         print("Press 1 - Create a New Room")
         print("Press 2 - Show All Rooms")
