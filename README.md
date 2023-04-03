@@ -1,4 +1,4 @@
-/*TO INSTALL mysql.connector */
+/*TO INSTALL mysql.connector*/
 https://youtu.be/jWcHIF4tnNI
 
 /*to fix error in pandas*/
