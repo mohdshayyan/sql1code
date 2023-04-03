@@ -1,6 +1,5 @@
 import mysql.connector as mycon
-con = mycon.connect(host="localhost",user="root",password="root",database="hotel")
-
+con = mycon.connect(host="localhost",user="root",password="root")
 def showmenu():
     while True:
         print("@" * 30)
@@ -105,5 +104,6 @@ def checkout():
      cr1.execute(q)
      con.commit()
 if con.is_connected():
-     showmenu()
-     print("connected")
+    showmenu()
+    print("connected")
+    
