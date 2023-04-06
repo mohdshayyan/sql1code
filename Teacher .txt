@@ -1,0 +1,15 @@
+CREATE DATABASE SHL;
+USE SHL;
+CREATE TABLE TEACHER(No INT,Name VARCHAR(20),Age int,Department VARCHAR(20),Dateofjoin VARCHAR(10),Salary int,Sex VARCHAR(1));
+INSERT INTO TEACHER VALUES(1,'Jugal',34,'Computer','30/85/56',12000,'M');
+INSERT INTO TEACHER VALUES(2,'Sharmila',31,'History','24/03/98',20000,'F');
+INSERT INTO TEACHER VALUES(3,'Sandeep',32,'Maths','12/12/96',30000,'M');
+INSERT INTO TEACHER VALUES(4,'Sangeeta',35,'History','01/07/99',40000,'F');
+INSERT INTO TEACHER VALUES(5,'Rakesh',42,'Maths','05/09/97',25000,'M');
+INSERT INTO TEACHER VALUES(6,'Shyam',50,'History','27/06/98',30000,'M');
+INSERT INTO TEACHER VALUES(7,'Shiv Om',44,'Computer','25/02/97',21000,'M');
+INSERT INTO TEACHER VALUES(8,'Shalakha',33,'Maths','31/07/97',20000,'F');
+/*(a) To Show all information about the teacher of history department */
+/*(b) To list the names of female teachers who are in hindi department*/
+/*(c) To list names of all teachers with their date of joining in ascending order*/
+SELECT * FROM TEACHER;
