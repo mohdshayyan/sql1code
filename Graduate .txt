@@ -11,4 +11,6 @@ INSERT INTO GRADUATE VALUES(7,'ROBERT',250,'PHYSICS',64,1);
 INSERT INTO GRADUATE VALUES(8,'RUBINA',450,'MATHEMATICS',68,1);
 INSERT INTO GRADUATE VALUES(9,'VIKAS',500,'COMPUTER SC',62,1);
 INSERT INTO GRADUATE VALUES(10,'MOHAN',300,'MATHEMATICS',57,2);
+/*(a) List the names of those students who have obtained Rank 1 sorted by NAME*/
+/*(b) Display a report,listing NAME,STIPEND,SUBJECT and amount of stipend received in a year assuming that the STIPEND is paid every month*/
 SELECT * FROM GRADUATE;
