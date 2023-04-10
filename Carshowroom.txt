@@ -1,6 +1,6 @@
 CREATE DATABASE carshowroom;
 use carshowroom;
-
+/**/
 create table inventory(CarId char(4) primary key, CarName char(4) not null, Price int default 0, Model varchar(15), Year VARCHAR(5),FuelType varchar(10));
 INSERT INTO INVENTORY VALUES('D001','Car1',582613.00,'LXI','2017','Petrol');
 INSERT INTO INVENTORY VALUES('D002','Car2',673112.00,'VXI','2018','Petrol');
