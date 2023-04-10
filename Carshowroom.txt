@@ -23,7 +23,7 @@ INSERT INTO EMPLOYEE VALUES('E004','Arpit','1989/06/06','2010/12/02','Salesman',
 INSERT INTO EMPLOYEE VALUES('E006','Sanjucta','1985/11/03','2012/07/01','Receptionist',27350);
 INSERT INTO EMPLOYEE VALUES('E007','Mayank','1993/04/03','2017/01/01','Salesman',27352);
 INSERT INTO EMPLOYEE VALUES('E010','Rajkumar','1987/02/26','2013/10/23','Salesman',31111);
-create table sale(InvoiceNo char(4) primary key, CarId char(4), CustID char(5), SaleDate date, PaymentMode varchar(20),EmpId char(4),SalePrice float, foreign key(CarId) references inventory(carId), foreign key (CustId) references Customer(CustId), foreign key (EmpId) references Employee(EmpId));
+create table sale(InvoiceNo VARCHAR(10) primary key, CarId char(4), CustID char(5), SaleDate date, PaymentMode varchar(20),EmpId char(4),SalePrice float, foreign key(CarId) references inventory(carId), foreign key (CustId) references Customer(CustId), foreign key (EmpId) references Employee(EmpId));
 INSERT INTO SALE VALUES('I00001','D001','C0001','2019/01/24','Credit Card','E004',613247.00);
 INSERT INTO SALE VALUES('I00002','S001','C0002','2018/12/12','Online','E001',590321.00);
 INSERT INTO SALE VALUES('I00003','S002','C0004','2019/01/25','Cheque','E010',604000.00);
