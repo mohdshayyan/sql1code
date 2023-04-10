@@ -1,12 +1,12 @@
-/*TO INSTALL mysql.connector*/
+/*TO INSTALL mysql.connector=>*/
 https://youtu.be/jWcHIF4tnNI
 commands=>
 1. setup.py
 2. pip install mysql-connector
 3. IDLE=> import mysql.connector
 
-/*To INSTALL MYSQL SERVER: https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.32.0.msi */
-/*YOUTUBE LINK https://youtu.be/2c2fUOgZMmY */
+/*To INSTALL MYSQL SERVER=> https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.32.0.msi */
+/*YOUTUBE LINK=> https://youtu.be/2c2fUOgZMmY */
 
-/*to fix error in pandas*/
+/*to fix error in panda=>*/
 https://www.youtube.com/watch?v=WPNhrYmx_Jk
