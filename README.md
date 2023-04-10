@@ -5,7 +5,7 @@ commands=>
 2. pip install mysql-connector
 3. IDLE=> import mysql.connector
 
-*To INSTALL MYSQL SERVER=> https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.32.0.msi *
+*To INSTALL MYSQL SERVER=>* https://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-8.0.32.0.msi 
 
 * YOUTUBE LINK=> https://youtu.be/2c2fUOgZMmY *
 
