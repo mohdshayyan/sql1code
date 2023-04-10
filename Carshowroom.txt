@@ -10,7 +10,7 @@ INSERT INTO INVENTORY VALUES('E001','Car3',355205.00,'5 STR STD','2017','CNG');
 INSERT INTO INVENTORY VALUES('E002','Car3',654914.00,'CARE','2018','CNG');
 INSERT INTO INVENTORY VALUES('S001','Car4',514000.00,'LXI','2017','Petrol');
 INSERT INTO INVENTORY VALUES('S002','Car4',614000.00,'VXI','2018','Petrol');
-create table Customer(CustID char(5) primary key, CustName varchar(10), CustAdd varchar(20), phone BIGINT(11) default 999999999, email varchar(20));
+create table Customer(CustID char(5) primary key, CustName varchar(20), CustAdd varchar(20), phone BIGINT(11) default 999999999, email varchar(20));
 INSERT INTO CUSTOMER VALUES('c0001','AmitSaha','L-10, Pitampura',4564587852,'amitsaha2@gmail.com');
 INSERT INTO CUSTOMER VALUES('c0002','Rehnuma','J-12, SAKET',5527688761,'rehnuma@hotmail.com');
 INSERT INTO CUSTOMER VALUES('c0003','CharviNayyar','10/9, FF, Rohini',6811635425,'charvi123@yahoo.com');
