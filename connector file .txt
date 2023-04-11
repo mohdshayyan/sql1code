@@ -1,10 +1,11 @@
 import mysql.connector as mycon
-con = mycon.connect(host="localhost",user="root",password="root")
+con = mycon.connect(host="localhost",user="root",password="root",database="hotel")
+#con = mycon.connect(host="localhost",user="root",password="root")
 def showmenu():
     while True:
-        print("@" * 30)
-        print("----    HOTEL SHAYYAN    ----")
-        print("@" * 30)
+        print("*" * 114)
+        print("                                         ----     WELCOME TO HOTEL SHAYYAN    ----")
+        print("*" * 114)
         print("Press 1 - Create a New Room")
         print("Press 2 - Show All Rooms")
         print("Press 3 - Show All Vacant Rooms")
