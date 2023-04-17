@@ -1,3 +1,5 @@
+*MySql Cheatsheet=> https://www.codewithharry.com/blogpost/mysql-cheatsheet/*
+
 *TO INSTALL mysql.connector=>*
 https://youtu.be/jWcHIF4tnNI
 commands=>
