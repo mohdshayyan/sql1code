@@ -4,7 +4,7 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="root",
-  database="students")
+  database="school")
 print(mydb,"connected to server")
 
 # Define the function to display the menu
