@@ -35,3 +35,15 @@ SELECT * FROM CUSTOMER;
 SELECT * FROM SALE;
 SELECT * FROM EMPLOYEE;
 /**/
+
+/*QUES*/
+/*1.Display the number of cars purchased by eachcustomer from the SALE table*/
+SELECT CustID, COUNT(*) "Number of Cars" FROM SALE GROUP BY CustID;
+/*2.Display the customer Id and number of carspurchased if the customer purchased more than 1car from SALE table*/
+SELECT CustID, COUNT(*) FROM SALE GROUP BY CustID HAVING Count(*)>1;
+/*3.Display the number of people in each category of payment mode from the table SALE*/
+SELECT PaymentMode, COUNT(PaymentMode) FROM SALE GROUP BY Paymentmode ORDER BY Paymentmode;
+/*OR*/
+SELECT COUNT(*) AS No_of_People,PaymentMode FROM SALE GROUP BY PaymentMode;
+/*4.Display the PaymentMode and number of payments made using that mode more than once.*/
+SELECT PaymentMode,COUNT(PaymentMode) FROM SALE GROUP BY PaymentMode HAVING COUNT(*)>1;
