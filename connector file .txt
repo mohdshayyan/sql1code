@@ -10,25 +10,25 @@ print(mydb,"connected to server")
 # Define the function to display the menu
 def menu():
     print("*" * 130)
-    print("\n                                                       ---| Welcome to SHAYYAN School Management System |---\n")
+    print("\n                                                       ---| Welcome to  School Management System by Shayyan|---\n")
     print("*" * 130)
-    print("1. Add new student")
+    print("1. Add new student record")
     print("2. View student details")
-    print("3. Exit")
-#  print("4. Update student details")
-#   print("5. Delete student")
-
+    print("3. Update student details")
+    print("4. Delete student details")
+    print("5. Exit")
 # Define the function to add a new student
 def add_student():
+    Id=input("Enter Student ID: ")
     name = input("Enter student name: ")
     age = input("Enter student age: ")
     gender = input("Enter student gender: ")
     room_no = input("Enter student room no: ")
     cursor = mydb.cursor()
     # CREATING A TABLE
-#   cursor.execute('CREATE TABLE students (name VARCHAR(255), age VARCHAR(255), gender VARCHAR(255), room_no VARCHAR(255))')
-    sql = "INSERT INTO students (name, age, gender, room_no) VALUES (%s, %s, %s, %s)"
-    val = (name, age, gender, room_no)
+#    cursor.execute('CREATE TABLE students (Id VARCHAR(255),name VARCHAR(255), age VARCHAR(255), gender VARCHAR(255), room_no VARCHAR(255))')
+    sql = "INSERT INTO students (Id,name, age, gender, room_no) VALUES (%s,%s, %s, %s, %s)"
+    val = (Id,name, age, gender, room_no)
     cursor.execute(sql, val)
     mydb.commit()
     print(cursor.rowcount, "record(s) inserted.")
@@ -42,7 +42,7 @@ def view_students():
         print(row)
 
 # Define the function to update student details
-'''def update_student():
+def update_student():
     id = input("Enter student id: ")
     name = input("Enter student name: ")
     age = input("Enter student age: ")
@@ -53,22 +53,21 @@ def view_students():
     val = (name, age, gender, room_no, id)
     cursor.execute(sql, val)
     mydb.commit()
-    print(cursor.rowcount, "record(s) updated.")'''
+    print(cursor.rowcount, "record(s) updated.")
 
 # Define the function to delete student details
-'''def delete_student():
-    id = input("Enter student id: ")
+def delete_student():
+    Id = input("Enter student id: ")
     cursor = mydb.cursor()
-    sql = "DELETE FROM students WHERE id = %s"
-    val = (id,)
+    sql = "DELETE FROM students WHERE Id = %s"
+    val = (Id,)
     cursor.execute(sql, val)
     mydb.commit()
-    print(cursor.rowcount, "record(s) deleted.")'''
-
+    print(cursor.rowcount, "record(s) deleted.")
 # Call the menu function
 while True:
     menu()
-
+    
     # Get the user's choice
     choice = input("Enter your choice: ")
 
@@ -77,11 +76,11 @@ while True:
         add_student()
     elif choice == '2':
         view_students()
-    elif choice == '3':
-        print("Exiting...")
-    elif choice == '4':
-        update_student()
     elif choice == '5':
+        print("Exiting...")
+    elif choice == '3':
+        update_student()
+    elif choice == '4':
         delete_student()        
         break
     else:
