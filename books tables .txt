@@ -1,0 +1,15 @@
+CREATE DATABASE PRO;
+USE PRO;
+CREATE TABLE PRODUCT(Pcode varchar(5),PName varchar(20),UPrice int,Manufacture varchar(20));
+INSERT INTO PRODUCT VALUES('P01','Washing Powder',120,'Surf');
+INSERT INTO PRODUCT VALUES('P02','Tooth Paste',54,'Colgate');   
+INSERT INTO PRODUCT VALUES('P03','Soap',25,'Lux');              
+INSERT INTO PRODUCT VALUES('P04','Tooth Paste',65,'Pepsodent'); 
+INSERT INTO PRODUCT VALUES('P05','Soap',38,'Dove');             
+INSERT INTO PRODUCT VALUES('P06','Shampoo',245,'Dove');         
+select * from product;
+/**/
+
+
+
+
