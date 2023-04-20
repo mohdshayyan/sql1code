@@ -9,7 +9,3 @@ INSERT INTO PRODUCT VALUES('P05','Soap',38,'Dove');
 INSERT INTO PRODUCT VALUES('P06','Shampoo',245,'Dove');         
 select * from product;
 /**/
-
-
-
-
