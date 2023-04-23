@@ -1,4 +1,10 @@
+#                                                                                       ---| PYTHON CODING |---
+#                                                                                 ---|School Management System|---
+#                                                                             ---|  Designed and Maintained By  |---
+#                                                                       ---| SHAYYAN - Class XII SCI {2023-2024}|---
 import mysql.connector
+userName=input("\n ENTER MYSQL SERVER'S USERNAME: ")
+password=input("\n ENTER MYSQL SERVER'S PASSWORD: ")
 # Connecting from the server
 mydb = mysql.connector.connect(
   host="localhost",
@@ -10,15 +16,15 @@ print(mydb,"connected to server")
 # Define the function to display the menu
 def menu():
     print("*" * 130)
-    print("                                                       ---| Welcome to  School Management System by Shayyan|---\n")
+    print("                                                 ---| Welcome to  School Management System by Shayyan|---\n")
     print("*" * 130)
     #    print(". Exit")
     print("(1.) Add New Student record                                          (2.) View Student details")
     print("(3.) Update Student details                                            (4.) Delete Student details")
-    print("(5.) Add new Staff record                                               (6.) View Staff details")
+    print("(5.) Add new Staff record                                               (6.) View Staff details")    
     print("(7.) Update Staff details                                                 (8.) Delete Staff details")
     print("(9.) Add Fee deposit details                                           (10.) View Fee datails")
-    print("(11.) Update Fee datails                                                  (12.) Delete Fee datails")
+    print("(11.) Update Fee datails                                                  (12.) Delete Fee datails                     (13.) Exit")
 # Define the function to add a new student
 def add_student():
     Id=input("Enter Student SrNo: ")
@@ -28,7 +34,7 @@ def add_student():
     room_no = input("Enter student Class: ")
     cursor = mydb.cursor()
     # CREATING A TABLE
-    cursor.execute('CREATE TABLE students (Id VARCHAR(255),name VARCHAR(255), age VARCHAR(255), gender VARCHAR(255), room_no VARCHAR(255))')
+#    cursor.execute('CREATE TABLE students (Id VARCHAR(255),name VARCHAR(255), age VARCHAR(255), gender VARCHAR(255), room_no VARCHAR(255))')
 # Inserting Values
     sql = "INSERT INTO students (Id,name, age, gender, room_no) VALUES (%s,%s, %s, %s, %s)"
     val = (Id,name, age, gender, room_no)
@@ -78,7 +84,7 @@ def add_staff():
     cursor = mydb.cursor()
 
     # CREATING A TABLE
-    cursor.execute('create table Staff(Id varchar(50),post varchar(50),name varchar(50),salary varchar(50),phone varchar(50))')
+#    cursor.execute('create table Staff(Id varchar(50),post varchar(50),name varchar(50),salary varchar(50),phone varchar(50))')
 # Inserting Values
     sqls = "INSERT INTO staff (Id,post,name,salary,phone) VALUES (%s,%s,%s, %s, %s)"
     vals = (Id,post,name,salary,phone)
@@ -129,7 +135,7 @@ def fee():
     PaidAmt= input("Enter PaidAmt : ")
     cursor = mydb.cursor()
 # CREATING A TABLE
-    cursor.execute('create table fee(SrNo varchar(50),Name varchar(50),Class varchar(50),Status varchar(50),Quarter varchar(50),PaidAmt varchar(50))')
+#    cursor.execute('create table fee(SrNo varchar(50),Name varchar(50),Class varchar(50),Status varchar(50),Quarter varchar(50),PaidAmt varchar(50))')
  # Inserting Values
     msql = "INSERT INTO fee (SrNo,Name,Class,Status,Quarter,PaidAmt) VALUES (%s,%s, %s, %s, %s,%s)"
     valu = (SrNo,Name,Class,Status,Quarter,PaidAmt)
@@ -201,6 +207,9 @@ while True:
         update_fee()
     elif choice == '12':
         delete_fee()
+    elif choice == '13':
+        print("Exited Succesfully, thanks for coming :-)")
+        break
     else:
         print("Invalid choice. Please try again.")
 # Disconnecting from the server
