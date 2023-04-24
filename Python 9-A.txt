@@ -109,21 +109,3 @@ print('your name is','name')
 
 o/p:
 your name is name
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-  
-
- 
