@@ -1,0 +1,38 @@
+CREATE DATABASE Streams_Of_Students;
+use Streams_Of_Students;
+CREATE TABLE STUDENT(AdmNo INT(3) PRIMARY KEY,Name VARCHAR(20),StCode VARCHAR(5));
+INSERT INTO STUDENT VALUES(211,'Jay','NULL');
+INSERT INTO STUDENT VALUES(241,'Aditya','S03');
+INSERT INTO STUDENT VALUES(290,'Diksha','S01');
+INSERT INTO STUDENT VALUES(333,'Jasqueen','S02');
+INSERT INTO STUDENT VALUES(356,'Vedika','S01');
+INSERT INTO STUDENT VALUES(380,'Ashpreet','S03');
+select * from student;
+/**/
+CREATE TABLE Stream(StCode VARCHAR(5) PRIMARY KEY,Stream VARCHAR(20),foreign key (Stcode) references STUDENT(Stcode));
+INSERT INTO Stream VALUES('S01','Science');
+INSERT INTO Stream VALUES('S02','Commerce');                                                                                │
+INSERT INTO Stream VALUES('S03','Humanities');                                                                              │
+select * from stream;
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
